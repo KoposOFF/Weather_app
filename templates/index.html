@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <h1>Прогноз погоды</h1>
+    <form method="post">
+        <label for="city">Введите город:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="submit">Узнать погоду</button>
+    </form>
+
+    {% if city %}
+    <h2>Погода в {{ city }}</h2>
+    <p>Температура: {{ temperature }}°C</p>
+    <p>Скорость ветра: {{ wind_speed }} км/ч</p>
+    {% elif error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
