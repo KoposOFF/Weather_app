@@ -21,8 +21,8 @@
 
 1. **Склонируйте репозиторий:
 в терминале введите:
-    "git clone https://github.com/koposOFF/weather_app.git"
-    "cd weather_app"
-    "uvicorn main:app --reload"
+**"git clone https://github.com/koposOFF/weather_app.git"
+**"cd weather_app"
+**"uvicorn main:app --reload"
 
 Перейдите в браузер и откройте [http://localhost:8000](http://localhost:8000).
