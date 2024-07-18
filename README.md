@@ -19,7 +19,7 @@
 
 ### Как запустить
 
-1. **Склонируйте репозиторий: .
+1. Склонируйте репозиторий: .
 - в терминале введите: .
 - "git clone https://github.com/koposOFF/weather_app.git" .
 - "cd weather_app" .
